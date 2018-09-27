@@ -1,0 +1,24 @@
+{
+    "name": "pmurkin/mongo-schema-dumper",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Павел Муркин",
+            "email": "kot_tdf@mail.ru"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Pmurkin\\MongoSchemaDumper\\": "src"
+        }
+    },
+    "require": {
+        "php": ">=7.0",
+        "illuminate/support": "^5.0",
+        "illuminate/console": "^5.0"
+    },
+    "require-dev": {
+        "scrutinizer/ocular": "^1.3"
+    }
+}
