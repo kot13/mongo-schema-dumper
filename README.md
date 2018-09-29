@@ -1,3 +1,7 @@
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/kot13/mongo-schema-dumper/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/kot13/mongo-schema-dumper/?branch=master)
+[![Total Downloads](https://poser.pugx.org/pmurkin/mongo-schema-dumper/downloads)](https://packagist.org/packages/pmurkin/mongo-schema-dumper)
+[![License](https://poser.pugx.org/pmurkin/mongo-schema-dumper/license)](https://packagist.org/packages/mongo-schema-dumper/bootstrapi)
+
 # Mongo Schema Dumper for Laravel
 
 Import and export mongodb schema without copying all the data:
