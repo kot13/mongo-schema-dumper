@@ -3,8 +3,8 @@
 namespace Pmurkin\MongoSchemaDumper;
 
 use Illuminate\Support\ServiceProvider;
-use App\Console\Commands\SchemaExport;
-use App\Console\Commands\SchemaImport;
+use Pmurkin\MongoSchemaDumper\Console\SchemaExport;
+use Pmurkin\MongoSchemaDumper\Console\SchemaImport;
 
 class MongoSchemaDumperServiceProvider extends ServiceProvider
 {
