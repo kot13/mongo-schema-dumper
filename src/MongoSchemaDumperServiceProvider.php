@@ -24,14 +24,14 @@ class MongoSchemaDumperServiceProvider extends ServiceProvider
     {
         $this->app->singleton(
             'command.schema.export',
-            function () {
+            function() {
                 return new SchemaExport();
             }
         );
 
         $this->app->singleton(
             'command.schema.import',
-            function () {
+            function() {
                 return new SchemaImport();
             }
         );
