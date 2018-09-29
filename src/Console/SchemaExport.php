@@ -96,7 +96,7 @@ class SchemaExport extends Command
             ];
 
             $indexes = DB::getMongoClient()->selectCollection($database, $collectionName)->listIndexes();
-            foreach ($indexes as $index) {
+            foreach($indexes as $index) {
                 $idx = [
                     'name' => $index->getName(),
                     'ns' => $index->getNamespace(),

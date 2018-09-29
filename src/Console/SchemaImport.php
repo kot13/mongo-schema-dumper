@@ -46,11 +46,11 @@ class SchemaImport extends Command
         $json = file_get_contents($file);
         $databases = json_decode($json, true);
         foreach ($databases as $database => $collections) {
-            $this->info('Import: ' . $database);
+            $this->info('Import: '.$database);
             $db = DB::getMongoClient()->selectDatabase($database);
 
             foreach ($collections as $name => $collection) {
-                $this->info('Create: ' . $name);
+                $this->info('Create: '.$name);
                 $db->createCollection($name, $collection['options']);
 
                 if (isset($collection['indexes']) && !empty($collection['indexes'])) {
