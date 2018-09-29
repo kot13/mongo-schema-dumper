@@ -25,9 +25,7 @@ class SchemaExport extends Command
     protected $description = 'Export schemas mongo databases to file';
 
     /**
-     * Create a new command instance.
-     *
-     * @return void
+     * SchemaExport constructor.
      */
     public function __construct()
     {

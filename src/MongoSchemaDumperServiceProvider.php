@@ -8,7 +8,6 @@ use Pmurkin\MongoSchemaDumper\Console\SchemaImport;
 
 class MongoSchemaDumperServiceProvider extends ServiceProvider
 {
-
     /**
      * Indicates if loading of the provider is deferred.
      *
@@ -23,14 +22,16 @@ class MongoSchemaDumperServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->app['command.schema.export'] = $this->app->share(
-            function ($app) {
+        $this->app->singleton(
+            'command.schema.export',
+            function () {
                 return new SchemaExport();
             }
         );
 
-        $this->app['command.schema.import'] = $this->app->share(
-            function ($app) {
+        $this->app->singleton(
+            'command.schema.import',
+            function () {
                 return new SchemaImport();
             }
         );

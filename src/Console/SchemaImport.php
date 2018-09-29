@@ -22,9 +22,7 @@ class SchemaImport extends Command
     protected $description = 'Import schemas mongo databases from file';
 
     /**
-     * Create a new command instance.
-     *
-     * @return void
+     * SchemaImport constructor.
      */
     public function __construct()
     {
